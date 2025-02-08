@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Network Request Logger",
+    "version": "1.0",
+    "permissions": [
+      "webRequest",
+      "storage",
+      "activeTab",
+      "alarms"
+    ],
+    "host_permissions": ["<all_urls>"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "options_page": "options.html"
+  }
+  
